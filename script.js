@@ -131,7 +131,7 @@ const displayQrCode = imgUrl => {
 // does request using parameters and base url 
 const getQrCode = (parameters) => {
     const urlParams = new URLSearchParams(parameters).toString(); // obtains url parameters for us with the current parameters 
-    const baseUrl = "http://api.qrserver.com/v1/create-qr-code"; // base url for api
+    const baseUrl = "https://api.qrserver.com/v1/create-qr-code"; // base url for api
     const fullUrl = `${baseUrl}?${urlParams}` ; // this is the full url with base  + params
     //checks the url if response is 200 then run display qr code function 
     fetch(fullUrl).then(response => {
